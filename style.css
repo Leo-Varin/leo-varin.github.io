@@ -1,0 +1,945 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*chargement*/
+
+.loading {
+    height: 428%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    transition: 1s all ease;
+}
+
+.loading>.loadingLeft {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    transition: 1s all ease;
+}
+
+.loading>.loadingRight {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    transition: 1s all ease;
+}
+
+.loaded {
+    width: 100%;
+    position: absolute;
+}
+/*---------------------------------
+//SCROLLBAR */
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: black;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 50px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    transition: 0.5s ease;
+}
+/* NAV */
+
+.menu {
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid white;
+    z-index: 1;
+    transition: 1s all ease;
+}
+
+.menuDown {
+    top: 0;
+}
+
+.menuUp {
+    top: -10vh;
+}
+
+.home {
+    min-width: 10vh;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home img {
+    width: auto;
+    height: 100%;
+    min-width: 10vh;
+    height: 100%;
+}
+
+.right {
+    /* background-image : url('./images/home.png'); */
+    background-color: purple;
+    min-width: 10vh;
+    height: 100%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links>li>a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.buttonShowMenu {
+    transition: 1s all ease;
+    z-index: 1;
+    position: fixed;
+    margin-left: 43%;
+    margin-right: 43%;
+    background-color: grey;
+    min-width: 50px;
+    height: 5%;
+    width: 14%;
+    text-align: center;
+}
+
+.buttonShowMenuUp {
+    top: 0;
+}
+
+.buttonShowMenuDown {
+    top: 10vh;
+}
+
+.buttonShowMenuImg {
+    z-index: 2;
+    width: auto;
+    height: 100%;
+    transition: 1s all ease;
+}
+
+article {
+    height: 100vh;
+}
+/* about --------------------------------------------------------*/
+
+#about {
+    background-color: black;
+    align-items: center;
+    height:150%;
+}
+
+canvas {
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+}
+
+.canvasSmall {
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+.canvasBig {
+    height: 100vh;
+}
+
+.resume{    
+    top: 8vh;
+    width:100vw;    
+    position: absolute;
+    text-decoration:none;
+    color: inherit;
+    text-align:center;
+}
+
+.resumeButton{
+    position:absolute;
+    min-width:145px;
+    width:15vw;
+    background-color: grey;
+    height:60px;
+    margin-left:42.2vw;
+}
+.alignResumeInside{   
+    margin-top:19px;
+} 
+
+.resume a{
+    all: unset;
+    color:white;
+}
+
+.name {
+    transition: 1s all ease;
+    top: 15vh;
+    left: 20vw;
+    width: 20vw;
+    min-width: 225px;
+    color: black;
+    opacity: 0.9;
+    background-color: lightgrey;
+    position: absolute;
+}
+
+.name h1 {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+}
+
+.aboutShow {
+    text-align: justify;
+    top: 15vh;
+    width: 20vw;
+    min-width: 225px;
+    height: 33vh;
+    opacity: 0.9;
+    position: absolute;
+    right: 20vw;
+}
+
+.aboutButton {
+    transition: 1s all ease;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutButton img {
+    width: auto;
+    height: 100%;
+    transition: 1s all ease;
+}
+
+.rotate {
+    transform: rotate(180deg)
+}
+
+.aboutDescription {
+    width: 100%;
+    color: black;
+    background-color: lightgrey;
+    transition: 1s all ease;
+}
+
+.aboutDescription p {
+    padding: 10px;
+    transition: 1s all ease;
+}
+
+
+
+
+.hobbies {
+    text-align: justify;
+    background-color: grey;
+    opacity: 0.8;
+    top: 55vh;
+    left: 10vw;
+    width: 35vw;
+    height: 35vh;
+    min-width: 225px;
+    color: white;
+    position: absolute;
+    transition:1s all ease;
+}
+
+.hobbies h2 {
+    text-align:center;
+    height:5vh;
+}
+
+.hobbiesEx {
+    height: 60%;
+    display:flex;
+}
+
+.hobbiesDesc{
+    font-size: 20px; 
+    margin-left:5%;
+    height : 100%;
+    width:40%;
+}
+
+.hobbiesImg {
+    margin-left: 10%;
+    height : 100%;
+    width:40%;
+   
+}
+
+.hobbiesImg img{
+   
+    height : 100%;
+    width:auto;
+}
+
+
+.hobbiesArrows {
+    position: absolute;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    bottom: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects{
+    text-align: justify;
+    background-color: grey;
+    opacity: 0.8;
+    top: 55vh;
+    right: 10vw;
+    width: 35vw;
+    height: 35vh;
+    min-width: 225px;
+    color: white;
+    position: absolute;
+    transition:1s all ease;
+}
+
+.projects h2{
+    text-align:center;
+    height:5vh;
+}
+.projectEx {
+    height: 60%;
+    display:flex;
+}
+
+.projectDesc{
+    font-size: 20px; 
+    margin-left:5%;
+    height : 100%;
+    width:40%;
+}
+
+.projectImg {
+    margin-left: 10%;
+    height : 100%;
+    width:40%;
+   
+}
+
+.projectImg img{   
+    height : 100%;
+    width:auto;
+}
+
+.projectArrows {
+    position: absolute;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    bottom: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arrow {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    transition:0.2s all ease;
+}
+
+.arrow:hover{
+    
+    border-top: 7px solid white;
+    border-right: 7px solid white;
+}
+
+.arrow-right {
+    transform: rotate(45deg);
+}
+
+.arrow-left {
+    transform: rotate(225deg);
+}
+
+.container {
+    width: 40%;
+    height: 40%;
+    border: 1px solid black;
+}
+
+canvas {
+    opacity: 0.5;
+}
+/* SKILLS------------------------- */
+
+#skills {
+    display: flex;
+    background-color: grey;
+}
+
+.align {
+    padding-top: 10vh;
+}
+
+.selected {
+    color: orange;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#levels {
+    width: 45vw;
+    color: white;
+}
+
+#levels h2 {
+    text-align: center;
+}
+
+.navSkills {
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+    background-color: grey;
+}
+
+.navSkills>div {
+    display: flex;
+    list-style: none;
+    min-width: 20%;
+    height: 100%;
+    align-items: center;
+}
+
+.navSkills>div>li {
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.selected {
+    background-color: orange;
+}
+
+.navSkills>div>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.navskillsleft {
+    margin-left: auto;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.navskillsright {
+    margin-right: auto;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.skillsFourth {
+    max-height: 90vh;
+    width: 40%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.clicked {
+    color: red;
+}
+
+.level {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.level div {
+    width: 100%;
+}
+
+.level div span {
+    display: table;
+    margin: 0 auto;
+}
+
+.skill {}
+
+.value {
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 0%;
+    padding: 4px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.value::after {
+    content: "%";
+}
+
+#levels article {
+    position: absolute;
+}
+
+#imageSkills {
+    background-image: url('./images/computer-night.jpg');
+    background-repeat: no-repeat;
+    background-position: 60% 100%;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+#contact {
+    background-color: black;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact section {
+    width: 50vw;
+    border: 1px solid red;
+}
+
+.contact {
+    align-items: center;
+    text-align: center;
+}
+/* Experiences----------------------------------------------------------------------------- */
+
+#experiences {
+    border-bottom: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+#experiences h2 {
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+.experiences {
+    width: 80%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.experience {
+    border: 1px solid black;
+    height: 25%;
+    position: relative;
+    background-color: grey;
+}
+
+.exampleEx {
+    padding-top: 2vh;
+    transition: 1s all ease;
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+.exampleExClicked {
+    font-size: 25px;
+}
+
+.exampleDesc {}
+
+.contactExperience {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactExperience div {
+    display: flex;
+}
+
+.contactExperience p {
+    margin-left: 5px;
+}
+
+.contactExperience img {
+    position: relative;
+    bottom: 15px;
+}
+/*EDUCATION-----------------------------------*/
+
+#education{
+    background-color:grey;
+    height:80vh;
+    color : white;
+}
+
+#education h2{
+    padding-top:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.educationAlign{
+   
+    display:flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    height:80%;
+}
+
+.educationContent{
+    width:50%;
+}
+
+.educationImages{
+    width:50%;
+}
+
+.ecole{
+    height:30%;
+}
+
+.educationDesc{
+    width:100%;
+}
+
+
+.educationDescTitle{
+    font-size:25px;
+    text-align:center;
+    margin:20px;
+}
+.educationDescDescElement{
+    margin:10px;
+}
+
+.educationContact{
+    font-size:18px;
+    display:flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    height:100%;   
+}
+
+.educationContact>div{
+    display:flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    height:100%;
+    margin:10px;
+}
+
+.educationImages{
+
+}
+
+.TelecomImg{
+    margin-top:11vh;
+    margin-left:10%;
+    width:45%;
+    right:0;
+}
+
+.IUTImg{
+    margin-top:-10vh;
+    margin-left:40%;
+    top:20%;
+    width:60%;
+}
+
+.St-MichImg{
+    margin-top:-10vh;
+    margin-left:10%;
+    width:45%;
+    right:0;
+    
+}
+
+
+
+
+
+/* INFOS------------------------------- */
+
+#contact{
+    height:47vh;
+}
+
+.infos {
+    text-align: center;
+    width: 30vw;
+    min-width: 320px;
+    height: 415px;
+    padding: 3%;
+    border: 1px solid white;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titreinfo {
+    font-size: 30px;
+}
+
+.infos div {
+    padding: 20px;
+}
+
+.personName {
+    font-size: 23px;
+}
+
+
+.copyright {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    color: white;
+    background-color: grey;
+}
+
+@media screen and (max-width:1200px) {
+    .hobbiesDesc{
+        font-size: 16px;         
+    }
+    .educationContent{
+        width:100%;
+    }
+    .educationImages{
+        width:0;
+        visibility:hidden;
+    }
+
+    .projectDesc{
+        font-size: 16px;         
+    }
+    
+    .hobbiesImg img{
+        height : 80%;  
+    }
+
+    .projectImg img{
+        height : 80%;     
+    }
+}
+
+
+@media screen and (max-width:960px) {
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        z-index: 4;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    .hamburger:hover .g {
+        margin-left: -3px;
+        transition: 0.5s all ease;
+    }
+    .hamburger:hover .d {
+        margin-right: 0;
+        transition: 0.5s all ease;
+    }
+    .nav-links {
+        position: fixed;
+        background: gray;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0px;
+        /* CREATION DU CERCLE  */
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        /* pointer-events:none; */
+    }
+    .nav-links.open {
+        /* LE CERCLE S'AGRANDIT */
+        clip-path: circle(1100px at 90% -20%);
+        -webkit-clip-path: circle(1100px at 90% -20%);
+        pointer-events: all;
+    }
+    .nav-links.close {
+        clip-path: circle(-1100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+    }
+    .nav-links.red {
+        color: red;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .resumeButton{
+        width:225px;
+        margin-left:30vw;
+    }
+
+    
+    .hobbies{
+        height:22vh;
+        left:0;
+    }
+        
+    .hobbiesDesc{
+        margin-left:10%;
+        width:100%;
+    }
+
+    .hobbiesImg{
+        visibility: hidden;
+        width:0;
+    }
+
+     .projects{
+        height:22vh;
+        right:0;
+    }
+        
+    .projectDesc{
+        margin-left:10%;
+        width:100%;
+    }
+
+    .projectImg{
+        visibility: hidden;
+        width:0;        
+    }
+   
+
+    
+    li.fade {
+        opacity: 1;
+    }
+    .name {
+        left: 30vw;        
+    }
+    .aboutShow {
+        left: 30vw;
+        top: 30vh;
+    }
+    #skills {
+        display: block;
+    }
+    #levels {
+        width: 100vw;
+    }
+    .skillsFourth {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #imageSkills {
+        display: none;
+    }
+    .experiences {
+        width: 90%;
+        height: 80%;
+    }
+    #contact{
+        height:93.5vh;
+    }
+   
+    .contact {
+        display: block;
+    }
+    .contact section {
+        width: 100vw;
+    }
+    @media screen and (max-width:700px) {
+        .contactExperience {
+            font-size: 10px;
+        }
+        .contactExperience img {
+            scale: 0.3;
+        }
+        .educationDesc{
+            font-size:10px;
+        }
+        .educationContact{
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width:530px) {
+     
+    }
+    @media screen and (max-width:400px) {
+        .contactExperience {
+            font-size: 6px;
+        }
+        .contactExperience img {
+            scale: 0.15;
+        }
+        .educationDesc{
+           font-size:8px;
+       }
+    }
+}

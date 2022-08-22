@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+	<meta http_equiv="X-UA-Compatible" content="ie-edge"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="loading">
+		<div class ="loadingLeft loadingLeftPosition">
+			<!-- <p>Leo</p> -->
+		</div>
+		<div class ="loadingRight loadingRightPosition">
+		<!-- <p>Varin</p> -->
+		</div>
+		<!-- <span class="circle1"></span>
+		<span class="circle2"></span>
+		<span class="circle3"></span> -->
+	</div>
+	<div class = "loaded hidden">
+		<nav class="menu menuUp">
+			<div class="hamburger">
+				<div class="line g"></div>
+				<div class="line d"></div>
+				<div class="line g"></div>
+			</div>
+			<ul class="nav-links">
+				<li><a href="#about">About me</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#experiences">Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#contact">Contact</a></li>		
+			</ul>			
+		</nav>
+		<div class="buttonShowMenu buttonShowMenuUp">
+			<img class="buttonShowMenuImg" src="./images/arrow.png">
+			</div>
+		
+		<section>
+			<article id="about">					
+				<canvas class ="canvas .canvasSmall"></canvas>
+				<!-- <div class ="aboutContent"> -->
+					<div class = "name">
+						<h1>Leo Varin</h1>
+						<h2>IT student</h2>
+					</div>
+					<div class="aboutShow">
+						<div class="aboutButton">
+							<img class="aboutButtonImg" src="./images/arrow.png">
+						</div>
+						<div class="aboutDescription">
+							<p class ="hidden">
+							I am in the second year of my computer science course
+							and I would like to develop my skills by working in an IT company.
+							My course is giving me enough knowledge to have the possibility
+							to work in any field of computer science . 
+							I am also a self-motivated, willing to learn, flexible and well-organised student.
+
+							</p>
+						</div>
+					</div>
+
+					<div class="resume" >
+						<div class="resumeButton">
+							<div class="alignResumeInside">
+								<a href="resume.pdf" download>
+									Dowload My Resume
+								</a>
+							</div>	
+						</div>					
+					</div>
+
+					<div class= "hobbies">
+						<h2>Hobbies</h2>
+						<div class="hobbiesEx">
+							<div class="hobbiesDesc">
+								
+							</div>
+							<div class="hobbiesImg"></div>
+						</div>	
+						<div class="hobbiesArrows">																
+							<span class="arrow arrow-left arrow-left-hobbies"></span>
+							<span class="arrow  arrow-right arrow-right-hobbies"></span>							
+						</div>
+					</div>
+
+					<div class= "projects">
+						<h2>Projects</h2>
+						<div class="projectEx">
+							<div class="projectDesc">								
+							</div>
+							<div class="projectImg">								
+							</div>
+						</div>	
+						<div class="projectArrows">																
+							<span class="arrow arrow-left arrow-left-projects"></span>
+							<span class="arrow  arrow-right arrow-right-projects"></span>							
+						</div>
+					</div>
+				<!-- </div> -->
+				
+				
+			</article>	
+
+			<article id="skills">	
+				<div class="align">	
+					<article id='levels'>
+						<h2>My skills</h2>
+						<ul class="navSkills">
+							<div>
+								<li class="navskillsleft selected"><a>Generals</a></li>
+								<li class="navskillsmiddleleft"><a>Web</a></li>
+								<li class="navskillsmiddleright"><a>Datascience</a></li>
+								<li class="navskillsright"><a>Languages</a></li>
+							</div>				
+							
+						</ul>
+						<article class="skillsFourth skillGenerals " id ="skills/generals">
+							<div class="level">
+								<div>
+									<span class='skill'>Java</span>
+								</div>
+								<div>
+									<span class='value'>70</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>C/C++/C#/</span>
+								</div>
+								<div>
+									<span class='value'>75</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>Bash</span>
+								</div>
+								<div>
+									<span class='value'>55</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>Python</span>
+								</div>
+								<div>
+									<span class='value'>65</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>R</span>
+								</div>
+								<div>
+									<span class='value'>60</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>Auto it</span>
+								</div>
+								<div>
+									<span class='value'>65</span>
+								</div>
+							</div>			
+						</article>
+						<article class="skillsFourth skillWeb hidden " id ="skills/web">
+							<div class="level">
+								<div>
+									<span class='skill'>HTML</span>
+								</div>
+								<div>
+									<span class='value'>95</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>CSS</span>
+								</div>
+								<div>
+									<span class='value'>75</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>PHP</span>
+								</div>
+								<div>
+									<span class='value'>55</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>JS</span>
+								</div>
+								<div>
+									<span class='value'>55</span>
+								</div>
+							</div>			
+						</article>
+						<article class="skillsFourth skillDatabase hidden " id ="skills/database">
+							<div class="level">
+								<div>
+									<span class='skill'>SQL</span>
+								</div>
+								<div>
+									<span class='value'>80</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>PowerBI</span>
+								</div>
+								<div>
+									<span class='value'>85</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>Azure</span>
+								</div>
+								<div>
+									<span class='value'>65</span>
+								</div>
+							</div>	
+							<div class="level">
+								<div>
+									<span class='skill'>Mulesoft</span>
+								</div>
+								<div>
+									<span class='value'>35</span>
+								</div>
+							</div>		
+						</article>	
+						<article class="skillsFourth skillLanguages hidden" id ="skills/languages">
+							<div class="level">
+								<div>
+									<span class='skill'>English</span>
+								</div>
+								<div>
+									<span class='value'>100</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>French</span>
+								</div>
+								<div>
+									<span class='value'>100</span>
+								</div>
+							</div>
+							<div class="level">
+								<div>
+									<span class='skill'>German</span>
+								</div>
+								<div>
+									<span class='value'>70</span>
+								</div>
+							</div>										
+						</article>
+						
+					</article>
+				</div>	
+				<article id="imageSkills">
+					
+				</article>
+			</article>
+
+			<article  id="experiences">	
+				<h2>Experiences</h2>
+				<div class="experiences">
+					<div class="experience experience0">
+						<p class="exampleEx exampleEx0">2021 : “Transports Jean-Claude Mermet” Marnaz, France </p>
+						<p class="exampleDesc exampleDesc0 hidden">3-month internship improving the company's IT and computer network</p>
+						<div class="contactExperience contactExperience1 hidden">
+							<div>
+								<img src="./images/email.png">
+								<p>a.molliex@mermetjc.com</p>
+							</div>
+							<div>
+								<img src="./images/phone.png">
+								<p>+33 4 50 98 15 30</p>
+							</div>
+							<div>
+								<img src="./images/position.png">
+								<p>181 Av. du Môle, 74460 Marnaz</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="experience experience1">
+						<p class="exampleEx exampleEx1">2020 : “FYM Designs” Annecy, France </p>
+						<p class="exampleDesc exampleDesc1 hidden">Creating the company’s website in a group project. </p>
+						<div class="contactExperience contactExperience1 hidden">
+							<div>
+								<img src="./images/email.png">
+								<p>leo.varin@yahoo.fr</p>
+							</div>
+							<div>
+								<img src="./images/phone.png">
+								<p>+33 7 68 18 04 55</p>
+							</div>
+							<div>
+								<img src="./images/position.png">
+								<p>56 Allée des Cyclamens, 74320 Sevrier</p>
+							</div>
+						</div>
+					</div>
+					<div class="experience experience2">
+						<p class="exampleEx exampleEx2">2019 : “Mac Donald’s” Sevrier, France</p>
+						<p class="exampleDesc exampleDesc2 hidden">Summer job as a versatile worker.</p>
+						<div class="contactExperience contactExperience2 hidden">
+							<div>
+								<img src="./images/phone.png">
+								<p>+33 4 50 52 65 86</p>
+							</div>
+							<div>
+								<img src="./images/position.png">
+								<p> 2798 Route D'albertville ,74320 Sévrier</p>
+							</div>							
+						</div>
+					</div>			
+					<div class="experience experience3">
+						<p class="exampleEx exampleEx3">2017 – 2018 : “Robbie’s“ Brisbane, Australia </p>
+						<p class="exampleDesc exampleDesc3 hidden">Part-time summer job as a house cleaner.</p>
+						<div class="contactExperience contactExperience3 hidden">
+							<div>
+								<img src="./images/email.png">
+								<p>robyn.peters@gmail.com</p>
+							</div>
+							<div>
+								<img src="./images/phone.png">
+								<p>+61 4 39 51 93 78</p>
+							</div>
+							<div>
+								<img src="./images/position.png">
+								<p>8 Boward Close QLD 4573 Yaroomba, Australia</p>
+							</div>					
+						</div>
+					</div>
+					<div class="experience experience4">
+						<p class="exampleEx exampleEx4">2016-2018 : Volunteer tutoring</p>
+						<p class="exampleDesc exampleDesc4 hidden">English and mathematics lessons for middle-schoolers.</p>
+						<div class="contactExperience contactExperience4 hidden">
+							<div>
+								<img src="./images/phone.png">
+								<p>+33 4 50 45 05 20</p>
+							</div>
+							<div>
+								<img src="./images/position.png">
+								<p>27 Fbg des Balmettes, 74000 Annecy</p>
+							</div>		
+						</div>
+					</div>
+					
+				</div>				
+			</article>
+
+			<article  id="education">
+				<h2>Education</h2>
+				<div class="educationAlign">
+					<section class="educationContent">
+						<div class="ecole">
+							<div class="educationDesc">
+								<div class="educationDescTitle">
+									2022-2024 : IT Engineering
+								</div>							
+								<div class="educationDescDesc">
+									<div class="educationDescDescElement">
+										Télécom Saint-Etienne, France.
+									</div>
+									<div class="educationDescDescElement">
+										3-year course in Information Technology, specialized in Datascience.
+									</div>							
+								</div>
+								<div class="educationContact">
+									<div>
+										<img src="./images/phone.png">
+										<p>+33 4 77 91 58 88</p>
+									</div>
+									<div>
+										<img src="./images/position.png">
+										<p>25 Rue Dr Rémy Annino, 42000 Saint-Étienne</p>
+									</div>
+								</div>
+							</div>											
+						</div>
+						<div class="ecole">
+							<div class="educationDesc">
+								<div class="educationDescTitle">
+									2021 : DUT Info
+								</div>							
+								<div class="educationDescDesc">
+									<div class="educationDescDescElement">
+										IUT – University of Savoy, Annecy, France.
+									</div>
+									<div class="educationDescDescElement">
+										2-year course in Information Technology.
+									</div>							
+								</div>
+								<div class="educationContact">
+									<div>
+										<img src="./images/phone.png">
+										<p>+33 4 50 09 22 22</p>
+									</div>
+									<div>
+										<img src="./images/position.png">
+										<p>9 Rue de l'Arc en Ciel, 74940 Annecy</p>
+									</div>
+								</div>
+							</div>											
+						</div>
+						<div class="ecole">
+							<div class="educationDesc">
+								<div class="educationDescTitle">
+									2019 : French Baccalaureate S SI
+								</div>							
+								<div class="educationDescDesc">
+									<div class="educationDescDescElement">
+										Saint Michel High School, Annecy, France.
+									</div>
+									<div class="educationDescDescElement">
+									High School diploma specialized in science and computer engineering with honors.
+									</div>							
+								</div>
+								<div class="educationContact">
+									<div>
+										<img src="./images/phone.png">
+										<p>+33 4 50 45 05 20</p>
+									</div>							
+								
+									<div>
+										<img src="./images/position.png">
+										<p>27 Fbg des Balmettes, 74000 Annecy</p>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</section>
+					<section class="educationImages">
+					<img class="TelecomImg" src="./images/Telecom.jpeg">
+						<img class="IUTImg"src="./images/IUT.jpg">						
+						<img class="St-MichImg" src="./images/St-Michel.jpg">
+					</section>					
+				</div>
+			</article>
+
+			<article id="contact">
+				<div class="contact">
+						<div class = "infos">
+							<p class="titreinfo">Contact me</p>
+							<div class="email">
+								<img src="./images/email.png">
+								<p>leo.varin@yahoo.fr</p>
+							</div>
+							<div class="phone">
+								<img src="./images/phone.png">
+								<p>+33 7 68 18 04 55</p>
+							</div>
+							<div class="adress">
+								<img src="./images/position.png">
+								<p>56 Allée des Cyclamens 74320 Sevrier</p>
+							</div>	
+						</div>	
+						<div class = "infos">
+						<p class="titreinfo">References</p>
+							<div class="person">
+								<p class="personName">Stephanie Bouchon</p>
+								<p class ="personContent">English Teacher</p>
+								<p class ="personContent">IUT - Annecy</p>
+								<p class ="personContent">stephanie.bouchon@niv-savoie.fr</p>												
+							</div>
+							<div class="person">
+								<p class="personName">Luc Damas</p>
+								<p class ="personContent">JS, PHP, HTML/CSS teacher</p>
+								<p class ="personContent">IUT - Annecy</p>
+								<p class ="personContent">luc.damas@univ-savoie.fr</p>
+							</div>
+
+						</div>
+				</div>					
+			</article>
+			<footer class = "copyright">&copy; VARIN Leo | ALL RIGHT RESERVED</footer>
+		</section>
+	</div>	
+	<script src='main.js'></script>
+
+</body>
+</html>
